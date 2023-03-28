@@ -8,7 +8,8 @@ export default function Footer() {
                     <address>
                         <div class="social-media">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>Alfredo Farid Sales 1185, CP (8430) El Bolsón, Río Negro. Patagonia, Argentina</p>
+                        <p>Alfredo Farid Sales 1185, CP (8430) <br/>
+                        El Bolsón, Río Negro. Patagonia, Argentina</p>
                         </div>
                         <div class="social-media">
                         <i class="fa-solid fa-phone"></i>
@@ -16,7 +17,7 @@ export default function Footer() {
                         </div>
                         <div class="social-media">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>fjr_89@hotmail.com</p>
+                        <p><a href="mailto:fjr_89@hotmail.com">fjr_89@hotmail.com</a></p>
                         </div>
                     </address>
             </footer>
