@@ -1,7 +1,7 @@
 
 import Header from "./Header.js"
 import Cabins from "./Cabins.js"
-import Reviews from "./Reviews"
+import Location from "./Location"
 import Footer from "./Footer"
 import "./style.css"
 
@@ -10,7 +10,7 @@ function App() {
     <div>
       <Header />
       <Cabins />
-      <Reviews />
+      <Location />
       <Footer />
     </div>
     

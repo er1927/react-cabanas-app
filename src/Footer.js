@@ -3,7 +3,7 @@ import React from "react"
 export default function Footer() {
     return(
         <div>
-            <footer>
+            <footer id="footer">
                 <h2>Cabañas Iris</h2>
                     <address>
                         <div class="social-media">

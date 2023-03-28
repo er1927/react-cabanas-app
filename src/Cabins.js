@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Cabins() {
     return(
-        <div class="main">
+        <div class="main" id="cabins">
         <div class="six">
           <a href=""><h2>Cabaña para 6 personas</h2></a>
         </div>

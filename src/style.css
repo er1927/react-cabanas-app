@@ -1,54 +1,3 @@
-* {
-  outline: 2px solid black;
-}   
-   html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-  }
- 
-  ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-  }
-  
-  ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-  }
-
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-  }
-
-  audio,
-  canvas,
-  iframe,
-  img,
-  svg,
-  video {
-    vertical-align: middle;
-  }
-
-  fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
-
-  textarea {
-    resize: vertical;
-  }
-  
-  /* - - - MOBILE STYLES - - - */
-  
-  /* - - - MAIN PAGE STYLES - - - */
-  
   body {
     background-color:#404625;
     color: antiquewhite;
@@ -70,6 +19,7 @@
     flex-flow: column wrap;
     justify-content: space-between;
     list-style-type: none;
+    padding: 1em;
     }
 
   a {
@@ -99,8 +49,10 @@
   }
   
   .main h2 {
-    color:#000;
-    text-shadow:3px 3px #7a722a;
+    color:#7a722a;
+    text-shadow:3px 3px #141d10;
+    font-size: 1em;
+    padding: 0 1em;
   }
 
   .six, .five, .four {
@@ -126,26 +78,35 @@
   .four {
     background-image: url("../public/4-pax-bed.jpg");
   }
-  
-  .rev {
-    align-items: center;
-    background-color: #304625;
+   
+  .map-container {
+    background-color: #141d10;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin:0 -.1em;
-    padding:2em;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2em 2em;
+    margin:0 -.3em;
   }
   
-  .rev h2 {
+  .map h2 {
+    font-size: 2em;;
+  }
+  
+  .map-embeded {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;  
+    position: relative;
+  }
+  
+  .map-embeded iframe {
+    height: 100%;
+    left: 0;
+    position:absolute;
+    top: 0;
     width: 100%;
-    text-shadow:3px 3px #29260e;
   }
-  
-  .rev-img {
-    padding: .5em;
-  }
-  
+    
   footer {
     align-content: space-between;
     display: flex;
@@ -157,8 +118,8 @@
   
   footer h2 {
     font-family: 'Lobster';
-    font-size: 3em;
-    margin:.1em 0;
+    font-size: 4em;
+    margin:.5em 0;
     text-shadow: 1px 5px #141d10;
     width:100%;
   }
@@ -177,188 +138,8 @@
     padding:.4em;
     margin:.2em;
   }
-    
-  /* - - - ABOUT PAGE STYLES - - - */
-    
-  .about-container {
-    background-color: #7a722a;
-    display: flex;
-    flex-direction:column ;
-    flex-wrap: nowrap;
-    gap: 1em;
-    justify-content: space-around;
-    padding:1em;
-  }
-  .about-container h2 {
-    font-size: 2em;
-  }
   
-  .about-img-cont {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .about-img {
-    height:299px;
-    width: 200px; 
-  }
-  
-  .about-text {
-    display: flex;
-  }
-  
-  
-  /* - - - CABINS PAGE STYLES - - - */
-    
-  .cabin-title {
-    background-color: #7a722a;
-    padding-left:1em;
-    padding-bottom:0;
-    font-size: 1.5em;
-  }
-    
-  /* - - - 4-PAX, 5-PAX, 6-PAX PAGE STYLES - - - */
-    
-  .main h3 {
-    font-size: 1em;
-  }
-  
-  .cabin-img {
-    width:100%;
-  }
-    
-  /* - - - SERVICES PAGE STYLES - - - */
-    
-  .services-container {
-    /* background-image: url('../img/juego.jpg'); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-flow: column nowrap;
-    font-size: 1.5em;
-    margin:.5em;
-    padding: 1em;
-    text-shadow: 1px 3px #304625;
-  }
-  
-  .services-container h2 {
-    font-size: 2em;
-  }
-  
-    /* - - - LOCATION STYLES - - - */
-    
-  .map {
-    background-color: #7a722a;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1em;
-  }
-  
-  .map h2 {
-    font-size: 2em;;
-  }
-  
-  .map-embeded {
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    position: relative;
-  }
-  
-  .map-embeded iframe {
-    height: 100%;
-    left: 0;
-    position:absolute;
-    top: 0;
-    width: 100%;
-  }
-    
-  /* - - - INQUIRY STYLES - - - */
-    
-  .form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding:1em;
-  }
-  
-  input[type=text], select, input[type=number] {
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    display: inline-block;
-    margin: 8px 4px;
-    padding: 12px 20px;
-    width: 200px;
-  }
-  
-  input[type=submit] {
-    background-color: #22311a;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    margin: 8px 4px;
-    padding: 14px 20px;
-    width: 400%;
-  }
-  
-  .inquiry {
-    padding:1em;
-  }
-  
-  .hidden,
-  [hidden] {
-    display: none !important;
-  }
- 
-  .sr-only {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    /* 1 */
-  }
-  
-  .sr-only.focusable:active,
-  .sr-only.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    white-space: inherit;
-    width: auto;
-  }
-  
-  .invisible {
-    visibility: hidden;
-  }
-  
-  .clearfix::before,
-  .clearfix::after {
-    content: " ";
-    display: table;
-  }
-  
-  .clearfix::after {
-    clear: both;
-  }
-  
-     /* - - - TABLET STYLES - - - */
-    
   @media only screen and (min-width: 768px) {
-    
-  /* - - - MAIN PAGE STYLES - - - */
     
   header {
     flex-direction: column;
@@ -386,145 +167,5 @@
   
   .main h2 {
     font-size: 2em;
-    padding:2em;
   }
-    
-  /* - - - CABINS PAGE STYLES - - - */
-    
-  .cabin-title h3 {
-    padding-left:1em;
-  }
-  
-  .rev h2 {
-    padding-left:.5em;
-  }
-    
-  /* - - - 4-PAX, 5-PAX, 6-PAX PAGE STYLES - - - */
-    
-  
-  /* - - - ABOUT PAGE STYLES - - - */
-    
-    .about-container {
-    align-items: flex-start;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-  
-  .about-container h2 {
-    width:100%;
-  }
-  
-  .about-text {
-    width:50%;
-  }
-    
-  /* - - - INQUIRY STYLES - - - */
-  
-  input[type=text], select, input[type=number], select {
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    display: inline-block;
-    margin: 16px 8px;
-    padding: 12px 20px;
-    width: 400px;
-  }
-  
-  input[type=submit] {
-    background-color: #22311a;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    margin: 16px 8px;
-    padding: 14px 20px;
-    width: 400px;
-  }
-  
-  /* - - - LOCATION STYLES - - - */
-    
-  .map-container {
-    align-items: center;
-    background-color: #7a722a;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .map {
-    padding: 2em;
-    width:30%;
-  }
-  
-  .map-embeded {
-    width:70%;
-  }
-  
-    /* - - - SERVICES STYLES - - - */
-    
-  @media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
-  }
- 
-  @media print {
-    *,
-    *::before,
-    *::after {
-      background: #fff !important;
-      color: #000 !important;
-      box-shadow: none !important;
-      text-shadow: none !important;
-    }
-  
-    a,
-    a:visited {
-      text-decoration: underline;
-    }
-  
-    a[href]::after {
-      content: " (" attr(href) ")";
-    }
-  
-    abbr[title]::after {
-      content: " (" attr(title) ")";
-    }
-  
-    a[href^="#"]::after,
-    a[href^="javascript:"]::after {
-      content: "";
-    }
-  
-    pre {
-      white-space: pre-wrap !important;
-    }
-  
-    pre,
-    blockquote {
-      border: 1px solid #999;
-      page-break-inside: avoid;
-    }
-  
-    thead {
-      display: table-header-group;
-    }
-  
-    tr,
-    img {
-      page-break-inside: avoid;
-    }
-  
-    p,
-    h2,
-    h3 {
-      orphans: 3;
-      widows: 3;
-    }
-  
-    h2,
-    h3 {
-      page-break-after: avoid;
-    }
-  } 
-}
+ }

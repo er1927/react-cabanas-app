@@ -6,10 +6,9 @@ export default function Header() {
             <header>
                 <h1>Cabañas Iris</h1>
                 <nav>
-                    <a href="">Nosotros</a>
-                    <a href="">Cabañas</a>
-                    <a href="">Ubicacion</a>
-                    <a href="">Consultas</a>
+                    <a href="#cabins">Cabañas</a>
+                    <a href="#location">Ubicacion</a>
+                    <a href="#footer">Consultas</a>
                 </nav>
             </header>
         </div>
