@@ -1,3 +1,6 @@
+/* * {
+  outline: 2px solid black;
+}    */
    html {
     color: #222;
     font-size: 1em;
@@ -58,21 +61,17 @@
   header {
     display: flex;
     justify-content:space-between;
-    padding:1.5em;
+    padding:1em;
   }
-  
-  h1 {
-    text-shadow: 1px 5px #141d10;
-  }
-  
+
   nav {
     align-items: center;
     display: flex;
     flex-flow: column wrap;
-    font-size: 1.2em;
+    font-size: 1em;
     justify-content: space-between;
     list-style-type: none;
-  }
+    }
 
   a {
     color:antiquewhite;
@@ -82,6 +81,8 @@
   header h1 {
     font-family: 'Lobster';
     font-size: 4em;
+    text-shadow: 1px 5px #141d10;
+    font-size: 3em;
   }
   
   .main {
@@ -103,6 +104,7 @@
     display: flex;
     height:400px;
     justify-items: center;
+    font-size: .7em;
   }
   
   /* .six {
@@ -340,18 +342,26 @@
   
      /* - - - TABLET STYLES - - - */
     
-  @media only screen and (min-width: 768) {
+  @media only screen and (min-width: 768px) {
     
   /* - - - MAIN PAGE STYLES - - - */
     
   header {
+    flex-direction: column;
     justify-content: space-around;
   }
   
-  header nav  {
-    align-self: flex-end;
+  header h1 {
+    text-align: center;
+  }
+  nav  {
+    text-align: center;
     display: inline;
-    word-spacing: 1em;
+    /* word-spacing: 2em; */
+  }
+
+  nav a {
+    padding:1em;
   }
   
   .main {
