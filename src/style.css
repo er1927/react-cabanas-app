@@ -1,3 +1,7 @@
+* {
+  outline: 2px solid orange;
+}  
+  
   body {
     background-color:#404625;
     color: antiquewhite;
@@ -40,7 +44,9 @@
   .main {
     background-color:#7a722a;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
     font-size: 3em;
     gap:.5em;
     padding:1em;
