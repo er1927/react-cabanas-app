@@ -1,5 +1,8 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
-  
+* {
+  outline: 2px solid orangered;
+}  
+
   body {
     background-color:#404625;
     color: antiquewhite;
@@ -56,7 +59,9 @@
     color:antiquewhite;
     text-shadow:3px 3px #141d10;
     font-size: 1em;
-    padding: 0 1em;
+    /* padding: 0 1em; */
+    text-align: center;
+    padding-right:.5em;
   }
 
   .six, .five, .four {
@@ -66,9 +71,10 @@
     background-size:cover; */
     display: flex;
     flex-direction: column;
-    height:400px;
+    /* height:400px; */
     justify-items: center;
     font-size: .7em;
+    padding:1em;
     /* color:#29260e; */
   }
   
