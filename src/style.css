@@ -1,7 +1,7 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
-* {
+/* * {
   outline: 2px solid orangered;
-}  
+}   */
 
   body {
     background-color:#404625;
@@ -187,4 +187,17 @@
     align-items: center;
   }
 
+  .map-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .map {
+    width:50%;
+    padding-right:2em;
+  }
+
+  .map-embeded {
+  width:50%;
+  }
  }
