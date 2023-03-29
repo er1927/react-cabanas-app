@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+  
   body {
     background-color:#404625;
     color: antiquewhite;
@@ -45,41 +47,42 @@
     align-items: center; */
     font-size: 3em;
     gap:.5em;
-    padding:1em;
+    padding: 1em 1em;
     text-align: center;
     margin:0 -.1em;
   }
   
   .main h2 {
-    color:#7a722a;
+    color:antiquewhite;
     text-shadow:3px 3px #141d10;
     font-size: 1em;
     padding: 0 1em;
   }
 
   .six, .five, .four {
-    align-items: center;
+    /* align-items: center;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:cover; */
     display: flex;
+    flex-direction: column;
     height:400px;
     justify-items: center;
     font-size: .7em;
-    color:#29260e;
+    /* color:#29260e; */
   }
   
-  .six {
+  /* .six {
     background-image: url("../public/6-pax-out.jpg");
-  }
-  
+  } */
+/*   
   .five {
     background-image: url("../public/5-pax-out.jpg");
   }
   
   .four {
     background-image: url("../public/4-pax-bed.jpg");
-  }
+  } */
    
   .map-container {
     background-color: #141d10;
@@ -169,6 +172,13 @@
   }
   
   .main h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
+
+  .six, .five, .four {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
  }
