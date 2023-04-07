@@ -8,6 +8,8 @@ I included a react component for the image gallery display to improve speed & fu
 
 This was my first solo project using React, and I'm quite pleased with the results, simple as they might be.
 
+Here's the live site: https://zundt5.csb.app/
+
 Thanks for reading! 
 
 https://github.com/er1927
