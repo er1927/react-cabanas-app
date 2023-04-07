@@ -1,9 +1,6 @@
-
-import Header from "./Header.js"
-import Cabins from "./Cabins.js"
-import Location from "./Location"
-import Footer from "./Footer"
-import "./style.css"
+import { Header, Cabins, Location, Footer } from "./components";
+import "./css/styles.css";
+import "./css/image-gallery.css";
 
 function App() {
   return (
@@ -13,7 +10,6 @@ function App() {
       <Location />
       <Footer />
     </div>
-    
   );
 }
 
