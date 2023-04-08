@@ -1,5 +1,5 @@
 import { Header, Cabins, Location, Footer } from "./components";
-import "./css/styles.css";
+import "./css/style.css";
 import "./css/image-gallery.css";
 
 function App() {
