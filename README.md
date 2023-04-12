@@ -1,31 +1,43 @@
-<!-- 
-App's purpose:
-    This is a revamped version of an HTML5/CSS/JS website I created for a local cabin rental,
-    that you can check out here: https://github.com/er1927/cabanas-iris
-    It's a responsive one-page site that showcases the cabins available for rent, 
-    alongside directions on how to get to their location,
-    and contact information to reach out to the owners.
+# Cabañas Iris App 
 
-App's functionality:
-    You can navigate the site via the nav bar up top,
-    you can slide through the image galleries for each cabin,
-    you can access the embeded Google map to get directions
-    and read the Google reviews.
+## Table of contents
 
-Additional dependencies installed:
-    "react-image-gallery": "^1.2.11",
-    "react-scripts": "5.0.1",
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1",
-
-Deploy instructions: 
-    npm start
+- [Overview](#overview)
+- [Links](#links)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Author](#author)
 
 
-Here's the live site: https://zundt5.csb.app/
+## Overview
+This is a one-page site that showcases local cabins for rent; it's a revamped version of an HTML5/CSS/JS multi-page site I created in November '22, that you can check out [here](https://github.com/er1927/cabanas-iris).
 
-Thanks for reading! 
+## Links
 
-https://github.com/er1927
- 
- -->
+- Code URL: [Repo](https://github.com/er1927/react-cabanas-app)
+- Live Site URL: [Live site](https://zundt5.csb.app/) 
+
+## Features
+
+- Users can access this site via mobile, tablet or desktop, comfortably;
+- Users can scroll through each cabin's photo gallery without leaving the site;
+- Users can find the cabins location and access Google maps directly from the site;
+- Users can find all pertinent contact information.
+
+## Dependencies
+
+- Loader-utils
+- React
+- React-DOM
+- React-image-gallery
+- React-scripts
+- Webpack
+- Webpack-cli
+
+## Author
+
+- Website - [Elizabeth Roberts](https://er1927.github.io/personal-portfolio/)
+- LinkedIn - [Elizabeth Roberts](https://www.linkedin.com/in/elizabethrobertswebdeveloper/)
+- Github - [@er1927](https://github.com/er1927)
+- Frontend Mentor profile- [@er1927 ](https://www.frontendmentor.io/profile/er1927)
+
